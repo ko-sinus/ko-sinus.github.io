@@ -46,7 +46,7 @@ LINKS = (("home", "/"),)
 
 # Social widget
 SOCIAL_ICONS = [
-    ('https://www.linkedin.com/in/koji-andria/', 'LinkedIn', 'fa-linkedin'),
+    ('https://www.linkedin.com/in/koji-andria/lang?=ENG', 'LinkedIn', 'fa-linkedin'),
     ('https://github.com/ko-sinus', 'GitHub', 'fa-github'),
 ]
 

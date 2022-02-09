@@ -37,7 +37,12 @@ YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/index.html'
 
 DELETE_OUTPUT_DIRECTORY = True
-LANDING_PAGE_TITLE = "Welcome to " + SITENAME
+
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'linenums': None}
+    }
+}
 
 TIMEZONE = 'Europe/Paris'
 

@@ -1,2 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Koji Andria</title><link href="https://ko-sinus.github.io/" rel="alternate"></link><link href="https://ko-sinus.github.io/atom.xml" rel="self"></link><id>https://ko-sinus.github.io/</id><updated>2022-02-09T10:33:07Z</updated><subtitle></subtitle></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Koji Andria</title><link href="https://ko-sinus.github.io/" rel="alternate"></link><link href="https://ko-sinus.github.io/atom.xml" rel="self"></link><id>https://ko-sinus.github.io/</id><updated>2022-02-06T00:00:00+01:00</updated><subtitle></subtitle><entry><title>Touch sensing library</title><link href="https://ko-sinus.github.io/2022/02/touch-sensing-library/" rel="alternate"></link><published>2022-02-06T00:00:00+01:00</published><updated>2022-02-06T00:00:00+01:00</updated><author><name></name></author><id>tag:ko-sinus.github.io,2022-02-06:/2022/02/touch-sensing-library/</id><summary type="html">&lt;p&gt;After I worked on &lt;a href="/2022/02/assistive-robotic-arm-for-children"&gt;Emilie's assistive robotic arm&lt;/a&gt;,
+I thought it might be useful to easily reuse the Disney capacitive touch sensing thing for other applications.
+After having found several attempts of putting Disney's science into a microcontroller library, &lt;code&gt;I decided to …&lt;/code&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;After I worked on &lt;a href="/2022/02/assistive-robotic-arm-for-children"&gt;Emilie's assistive robotic arm&lt;/a&gt;,
+I thought it might be useful to easily reuse the Disney capacitive touch sensing thing for other applications.
+After having found several attempts of putting Disney's science into a microcontroller library, &lt;code&gt;I decided to make one of my own&lt;/code&gt;.
+You can &lt;a href="https://github.com/ko-sinus/touche-library"&gt;find it on my Github here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you run out of ideas for using this on your own projects, just know that you can use &lt;code&gt;anything conductive&lt;/code&gt;.
+For instance, I have &lt;code&gt;some plants&lt;/code&gt; at home that are now capable of &lt;code&gt;lighting some LEDs&lt;/code&gt; when their leaves are touched.
+I just plugged the sensor cable into the soil. I did the same during Halloween 2021 with pumpkins !&lt;/p&gt;</content><category term="articles"></category></entry><entry><title>Assistive robotic arm for children</title><link href="https://ko-sinus.github.io/2022/02/assistive-robotic-arm-for-children/" rel="alternate"></link><published>2022-02-05T00:00:00+01:00</published><updated>2022-02-05T00:00:00+01:00</updated><author><name></name></author><id>tag:ko-sinus.github.io,2022-02-05:/2022/02/assistive-robotic-arm-for-children/</id><summary type="html">&lt;p&gt;This was the first &lt;code&gt;health-sensing&lt;/code&gt; project I made.
+It was intended for an 11 years old French child named Emilie.
+At the time, I was working at the &lt;a href="https://www.humanlabsaintpierre.org/"&gt;HumanLab Saint-Pierre&lt;/a&gt;
+(actually, if you click on the link and see a child holding …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This was the first &lt;code&gt;health-sensing&lt;/code&gt; project I made.
+It was intended for an 11 years old French child named Emilie.
+At the time, I was working at the &lt;a href="https://www.humanlabsaintpierre.org/"&gt;HumanLab Saint-Pierre&lt;/a&gt;
+(actually, if you click on the link and see a child holding a weird thing with a motor attached to it, this is Emilie !
+I am the man behind her at her right - the man on the left is the chief research engineer of the HumanLab.).
+The most beautiful thing of this project is that &lt;code&gt;it is entirely open-source&lt;/code&gt; - and that is why I can share all of these details with you.&lt;/p&gt;
+&lt;h2&gt;HumanLabs ?&lt;/h2&gt;
+&lt;p&gt;The open-source thing is actually a common aspect to all HumanLabs projects. If you don't know what HumanLabs are, &lt;a href="https://myhumankit.org/en/home/"&gt;you can find more about them here&lt;/a&gt;.
+HumanLabs basically consist of Fablabs that are specifically dedicated to &lt;code&gt;assistive technologies&lt;/code&gt;.
+Their goal is to encourage people with physical disabilities to conceive and manufacture their own assistive technologies, using a classic fablab's equipment (3D printing, open-source electronics, ...).&lt;/p&gt;
+&lt;p&gt;Not only did I had the chance to work within one of them, but I actually worked in a specific one :
+the HumanLab Saint-Pierre, located in the South of France, works closely with the &lt;a href="https://www.institut-st-pierre.com/"&gt;Institut Saint-Pierre paediatric hospital&lt;/a&gt;, and thus benefits from a dedicated medical team support (occupational therapists, ortho-prosthetists, doctors, ...).
+This cross-disciplinary team setting was key for the success of this project, as it linked &lt;code&gt;traditional orthosis fabrication&lt;/code&gt;, &lt;code&gt;3D printing&lt;/code&gt; and &lt;code&gt;electronics&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Short context&lt;/h2&gt;
+&lt;p&gt;Emilie is a timid but lovely child who has an injured arm : &lt;code&gt;her right arm is paralysed from her shoulder to her wrist&lt;/code&gt;, keeping her from any right elbow motion.
+Before this project started, she had a traditional mechanical orthosis - she had to lock her injured arm with the other one on one specific position.
+My role there was to propose a way to enable the elbow motion in the most natural way possible.
+Fortunatly since she could still move her fingers to grip something on her right hand, I was able to propose &lt;code&gt;an arm positioning system using the very same injured limb&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Disney's magic&lt;/h2&gt;
+&lt;p&gt;After reviewing some interaction technologies, I decided to use &lt;code&gt;capacitive sensing&lt;/code&gt; since it also resolved the direction control problem - upward or downward.
+As this project was not 'childish' enough, I based the touch sensing technology on &lt;a href="https://la.disneyresearch.com/publication/touche-enhancing-touch-interaction-on-humans-screens-liquids-and-everyday-objects/"&gt;Disney Research Lab's Touché project&lt;/a&gt;,
+mainly because of the hardware simplicity (only passive components) - which enable efficient scalability and reproductibility at low cost, both essential for any open-source project.
+Huge thanks to Danish makers &lt;a href="http://blog.dzl.dk/"&gt;DZL&lt;/a&gt;, &lt;a href="http://www.hobye.dk/"&gt;Mads Hobye&lt;/a&gt; and &lt;a href="http://illutron.dk/"&gt;Illutron&lt;/a&gt; for their preliminary work on bringing Disney's research into the maker world.
+The final solution I designed consists of a &lt;code&gt;touch-activation mechanism which moves a linear actuator for arm positionning&lt;/code&gt; (inspiration from &lt;a href="https://sites.google.com/site/ourkidscandoanything/"&gt;Lorelei's project&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;If you want full documentation on this, you can &lt;a href="https://wikilab.myhumankit.org/index.php?title=Projets:Orth%C3%A8se_de_Coude_Robotis%C3%A9e"&gt;directly head to this link&lt;/a&gt;.
+For non-french speakers, &lt;a href="https://github.com/ko-sinus/emilie-arm"&gt;source files are on my Github&lt;/a&gt;.&lt;/p&gt;</content><category term="articles"></category></entry></feed>

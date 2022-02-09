@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Basic Metas -->
+	<meta charset="utf-8">
+	<title>Assistive robotic arm for children | Koji Andria</title>
+	<meta name="description" content="This was the first health-sensing project I made. It was intended for an 11 years old French child named Emilie. At the time, I was working at the HumanLab Saint-Pierre (actually, if you click on the link and see a child holding …">
+	<meta name="author" content="kosinus">
+	<link rel="author" href=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- Twitter Cards and Open Graph -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:creator" content="">
+	<meta name="twitter:domain" content="https://ko-sinus.github.io">
+	<meta name="twitter:site" content="">
+	<meta property="og:title" content="Assistive robotic arm for children">
+	<meta property="og:description" content="This was the first health-sensing project I made. It was intended for an 11 years old French child named Emilie. At the time, I was working at the HumanLab Saint-Pierre (actually, if you click on the link and see a child holding …">
+	<meta property="og:image" content="https://ko-sinus.github.io/images/avatar.png">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="https://ko-sinus.github.io/2022/02/assistive-robotic-arm-for-children/">
+
+	<!-- Stylesheets and Web Fonts -->
+	<link href="/theme/style.min.css?a8c87a0d" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+	<meta name="theme-color" content="">
+
+	<meta name="msapplication-TileColor" content="">
+	<meta name="msapplication-TileImage" content="/images/mstile-144x144.png">
+	<meta name="msapplication-square70x70logo" content="/images/mstile-small.png">
+	<meta name="msapplication-square150x150logo" content="/images/mstile-medium.png">
+	<meta name="msapplication-wide310x150logo" content="/images/mstile-wide.png">
+	<meta name="msapplication-square310x310logo" content="/images/mstile-large.png">
+
+	<!--[if lt IE 9]>
+	<script src="/theme/js/html5shiv.min.js"></script>
+	<script src="/theme/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div class="container">
+		<aside>
+			<a href="/"><img id="avatar" alt="Site Avatar" src="/images/avatar.png"></a>
+			<div id="name"><a href="/">Koji Andria</a></div>
+			<div id="bio">Yet another engineering student.</div>
+
+			<div id="sidebar-links">
+				<a href="/about-me/">About me</a>&nbsp;|&nbsp;<a href="/resume/">Resume</a>
+			</div>
+
+			<div id="social">
+				<a href="https://www.linkedin.com/in/koji-andria/lang?=ENG" title="LinkedIn" class="icon fa fa-linkedin"></a>
+				<a href="https://github.com/ko-sinus" title="GitHub" class="icon fa fa-github"></a>
+			</div>
+
+			<hr id="sidebar-divider">
+		</aside>
+
+		<article>
+	<h1 class="title"><a href="/2022/02/assistive-robotic-arm-for-children/" title="Permalink to Assistive robotic arm for children">Assistive robotic arm for children</a></h1>
+	<time class="date" datetime="2022-02-05 00:00:00+01:00">Sam 05 février 2022</time>
+	<div class="content">
+		<p>This was the first <code>health-sensing</code> project I made.
+It was intended for an 11 years old French child named Emilie.
+At the time, I was working at the <a href="https://www.humanlabsaintpierre.org/">HumanLab Saint-Pierre</a>
+(actually, if you click on the link and see a child holding a weird thing with a motor attached to it, this is Emilie !
+I am the man behind her at her right - the man on the left is the chief research engineer of the HumanLab.).
+The most beautiful thing of this project is that <code>it is entirely open-source</code> - and that is why I can share all of these details with you.</p>
+<h2>HumanLabs ?</h2>
+<p>The open-source thing is actually a common aspect to all HumanLabs projects. If you don't know what HumanLabs are, <a href="https://myhumankit.org/en/home/">you can find more about them here</a>.
+HumanLabs basically consist of Fablabs that are specifically dedicated to <code>assistive technologies</code>.
+Their goal is to encourage people with physical disabilities to conceive and manufacture their own assistive technologies, using a classic fablab's equipment (3D printing, open-source electronics, ...).</p>
+<p>Not only did I had the chance to work within one of them, but I actually worked in a specific one :
+the HumanLab Saint-Pierre, located in the South of France, works closely with the <a href="https://www.institut-st-pierre.com/">Institut Saint-Pierre paediatric hospital</a>, and thus benefits from a dedicated medical team support (occupational therapists, ortho-prosthetists, doctors, ...).
+This cross-disciplinary team setting was key for the success of this project, as it linked <code>traditional orthosis fabrication</code>, <code>3D printing</code> and <code>electronics</code>.</p>
+<h2>Short context</h2>
+<p>Emilie is a timid but lovely child who has an injured arm : <code>her right arm is paralysed from her shoulder to her wrist</code>, keeping her from any right elbow motion.
+Before this project started, she had a traditional mechanical orthosis - she had to lock her injured arm with the other one on one specific position.
+My role there was to propose a way to enable the elbow motion in the most natural way possible.
+Fortunatly since she could still move her fingers to grip something on her right hand, I was able to propose <code>an arm positioning system using the very same injured limb</code>.</p>
+<h2>Disney's magic</h2>
+<p>After reviewing some interaction technologies, I decided to use <code>capacitive sensing</code> since it also resolved the direction control problem - flexion or extension.
+As this project was not 'childish' enough, I based the touch sensing technology on <a href="https://la.disneyresearch.com/publication/touche-enhancing-touch-interaction-on-humans-screens-liquids-and-everyday-objects/">Disney Research Lab's Touché project</a>,
+mainly because of the hardware simplicity (only passive components) - which enable efficient scalability and reproductibility at low cost, both essential for any open-source project.
+Huge thanks to Danish makers <a href="http://blog.dzl.dk/">DZL</a>, <a href="http://www.hobye.dk/">Mads Hobye</a> and <a href="http://illutron.dk/">Illutron</a> for their preliminary work on bringing Disney's research into the maker world.
+The final solution I designed consists of a <code>touch-activation mechanism which moves a linear actuator for arm positionning</code> (inspiration from <a href="https://sites.google.com/site/ourkidscandoanything/">Lorelei's project</a>).</p>
+<p>If you want full documentation on this, you can <a href="https://wikilab.myhumankit.org/index.php?title=Projets:Orth%C3%A8se_de_Coude_Robotis%C3%A9e">directly head to this link</a>.
+For non-french speakers, <a href="https://github.com/ko-sinus/emilie-arm">source files are on my Github</a>.</p>
+	</div>
+
+	<div id="related-articles">
+		<a href="/2022/02/touch-sensing-library/" id="next-neighbour">&laquo; Touch sensing library</a>
+	</div>
+
+			<hr>
+		</article>
+
+		<footer>
+			<p>@2022 by Koji Andriamahery. Powered by <a href="http://getpelican.com">Pelican</a> and <a href="http://pages.github.com">GitHub&nbsp;Pages</a>.</p>
+		</footer>
+	</div>
+
+
+</body>
+</html>

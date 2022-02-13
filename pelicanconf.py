@@ -14,7 +14,7 @@ ROBOTS = "index, follow"
 SITEDESCRIPTION = "Koji Andria"
 SITELOGO = "/images/kosinus.jpg"
 SITENAME = "Koji Andria"
-BIO_TEXT = "Yet another engineering student."
+BIO_TEXT = "MEng. & MSc. student."
 FOOTER_TEXT = '@2022 by Koji Andriamahery. Powered by <a href="http://getpelican.com">Pelican</a> and <a href="http://pages.github.com">GitHub&nbsp;Pages</a>.'
 SITETITLE = "kosinus"
 SITEURL = "https://ko-sinus.github.io"
@@ -25,13 +25,15 @@ THEME = "pneumatic"
 SIDEBAR_LINKS = [
     '<a href="/about-me/">About me</a>',
     '<a href="/resume/">Resume</a>',
+    '<a href="/projects/">\nProjects</a>'
 ]
-ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
-ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'
+ARTICLE_URL = '{slug}/'
+ARTICLE_SAVE_AS = 'projects/' + ARTICLE_URL + 'index.html'
 
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = PAGE_URL + 'index.html'
 
+INDEX_SAVE_AS = 'projects.html'
 ARCHIVES_SAVE_AS = 'archive/index.html'
 YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/index.html'

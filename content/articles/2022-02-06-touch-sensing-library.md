@@ -3,7 +3,7 @@ layout: post
 title: Touch sensing library
 ---
 
-After I worked on <a href="/2022/02/assistive-robotic-arm-for-children">Emilie's assistive robotic arm</a>,
+After I worked on <a href="/projects/assistive-robotic-arm-for-children">Emilie's assistive robotic arm</a>,
 I thought it might be useful to easily reuse the Disney capacitive touch sensing thing for other applications.
 After having found several attempts of putting Disney's science into a microcontroller library, `I decided to make one of my own`.
 You can [find it on my Github here](https://github.com/ko-sinus/touche-library).

@@ -29,7 +29,7 @@ Fortunatly since she could still move her fingers to grip something on her right
 ## Disney's magic
 After reviewing some interaction technologies, I decided to use `capacitive sensing` since it also resolved the direction control problem - flexion or extension.
 As this project was not 'childish' enough, I based the touch sensing technology on [Disney Research Lab's Touché project](https://la.disneyresearch.com/publication/touche-enhancing-touch-interaction-on-humans-screens-liquids-and-everyday-objects/),
-mainly because of the hardware simplicity (only passive components) - which enable efficient scalability and reproductibility at low cost, both essential for any open-source project.
+mainly because of the hardware simplicity (only passive components). Hardware simplicity enables efficient scalability and reproductibility at low cost, both essential for any open-source project.
 Huge thanks to Danish makers [DZL](http://blog.dzl.dk/), [Mads Hobye](http://www.hobye.dk/) and [Illutron](http://illutron.dk/) for their preliminary work on bringing Disney's research into the maker world.
 The final solution I designed consists of a `touch-activation mechanism which moves a linear actuator for arm positionning` (inspiration from [Lorelei's project](https://sites.google.com/site/ourkidscandoanything/)).
 

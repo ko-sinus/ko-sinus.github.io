@@ -33,7 +33,7 @@ ARTICLE_SAVE_AS = 'projects/' + ARTICLE_URL + 'index.html'
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = PAGE_URL + 'index.html'
 
-INDEX_SAVE_AS = 'projects.html'
+INDEX_SAVE_AS = 'projects/index.html'
 ARCHIVES_SAVE_AS = 'archive/index.html'
 YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/index.html'

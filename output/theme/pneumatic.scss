@@ -250,7 +250,7 @@ label {
 	width: 55px;
 	height: 30px;
 	background: var(--lightBtn);
-	margin: 0 auto;
+	margin: -30px auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -393,6 +393,7 @@ aside div {
 
 #next-neighbour { float: left; }
 #prev-neighbour { float: right; }
+#switch-button {float: right; position: top;}
 
 
 // Media Queries

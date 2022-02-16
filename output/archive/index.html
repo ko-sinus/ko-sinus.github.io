@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 	<!-- Basic Metas -->
 	<meta charset="utf-8">
@@ -11,13 +11,12 @@
 
 
 	<!-- Stylesheets and Web Fonts -->
-	<link href="/theme/style.min.css?0500845f" rel="stylesheet">
+	<link href="/theme/style.min.css?3e2504cc" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 	<!-- Favicons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
-	<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
 	<meta name="theme-color" content="">
 
 	<meta name="msapplication-TileColor" content="">
@@ -31,6 +30,7 @@
 	<script src="/theme/js/html5shiv.min.js"></script>
 	<script src="/theme/js/respond.min.js"></script>
 	<![endif]-->
+	
 </head>
 
 <body>
@@ -51,6 +51,9 @@ Projects</a>
 			</div>
 
 			<hr id="sidebar-divider">
+			
+			<input class="container_toggle" type="checkbox" id="switch" name="mode"/>
+        	<label for="switch">Toggle</label>
 		</aside>
 
 		<article>
@@ -72,5 +75,43 @@ Projects</a>
 	</div>
 
 
+	<!-- -->
+
+	<script>
+		 var checkbox = document.querySelector('input[name=mode]');
+
+		if(localStorage.getItem("data-theme") == 'light'){
+			document.documentElement.setAttribute('data-theme', 'light')
+			checkbox.checked = false;
+		};
+
+		if(localStorage.getItem("data-theme") == 'dark'){
+			document.documentElement.setAttribute('data-theme', 'dark')
+			checkbox.checked = true;
+		};
+		
+
+		checkbox.addEventListener('change', function() {
+			if(this.checked) {
+				trans()
+				document.documentElement.setAttribute('data-theme', 'dark')
+				localStorage.setItem("data-theme", "dark");
+			} else {
+				trans()
+				document.documentElement.setAttribute('data-theme', 'light')
+				localStorage.setItem("data-theme", "light");
+			}
+		});
+		
+		let trans = () => {
+			document.documentElement.classList.add('transition');
+			window.setTimeout(() => {
+				document.documentElement.classList.remove('transition');
+			}, 1000)
+		};
+
+	</script>
+	
 </body>
+
 </html>

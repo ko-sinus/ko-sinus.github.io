@@ -1,8 +1,10 @@
-Title: Welcome,
+Title: Welcome.
 URL:
 Save_as: index.html
 
-### my name `is Koji Andriamahery`. I'm a last-year `MEng.` and `MSc.`
+### My name is `Koji Andriamahery`. 
+
+I'm a last-year `MEng.` and `MSc.`
 student in `Mechatronics`, `Systems Engineering` and `Health Devices Engineering`.
 My professional goal is to work for meaningful and challenging human-centered projects that can improve lives.
 

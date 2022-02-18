@@ -9,7 +9,7 @@
 
 // Theme Variables
 
-$main-font: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+$main-font: "SFMono-Regular", Corbel, "Liberation Mono", Menlo, Courier, monospace;
 $code-font: $main-font;
 
 $social-icons: (
@@ -57,7 +57,7 @@ html[data-theme='dark'] {
 body {
 	background: var(--lightBg);
 	font-family: $main-font;
-	font-size: 15px;
+	font-size: 16.5px;
 	line-height: 1.6;
 	color: var(--lightColor);
 	-webkit-font-smoothing: antialiased;

@@ -8,7 +8,7 @@ It was intended for an 11 years old French child named Emilie.
 At the time, I was working at the [HumanLab Saint-Pierre](https://www.humanlabsaintpierre.org/)
 (actually, if you click on the link and see a child holding a weird thing with a motor attached to it, this is Emilie !
 I am the man behind her at her right - the man on the left is the chief research engineer of the HumanLab.).
-The most beautiful thing of this project is that `it is entirely open-source` - and that is why I can share all of these details with you.
+The most beautiful aspect of this project is that `it is entirely open-source` - and that is why I can share all of these details with you.
 
 ## HumanLabs ?
 The open-source thing is actually a common aspect to all HumanLabs projects. If you don't know what HumanLabs are, [you can find more about them here](https://myhumankit.org/en/home/).
@@ -17,7 +17,7 @@ Their goal is to encourage people with physical disabilities to conceive and man
 
 Not only did I had the chance to work within one of them, but I actually worked in a specific one :
 the HumanLab Saint-Pierre, located in the South of France, works closely with the [Institut Saint-Pierre paediatric hospital](https://www.institut-st-pierre.com/), and thus benefits from a dedicated medical team support (occupational therapists, ortho-prosthetists, doctors, ...).
-This cross-disciplinary team setting was key for the success of this project, as it linked `traditional orthosis fabrication`, `3D printing` and `electronics`.
+This cross-disciplinary team setting was key for the success of this project, as it linked `traditional orthosis manufacturing`, `3D printing` and `electronics`.
 
 ## Short context
 Emilie is a timid but lovely child who has an injured arm : `her right arm is paralysed from her shoulder to her wrist`, keeping her from any right elbow motion.

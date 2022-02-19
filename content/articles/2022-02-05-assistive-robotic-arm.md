@@ -3,7 +3,7 @@ layout: post
 title: Assistive robotic arm for children
 ---
 
-This was the first `health-sensing` project I made.
+This was the first `human-computer interaction for healthcare` project I made.
 It was intended for an 11 years old French child named Emilie.
 At the time, I was working at the [HumanLab Saint-Pierre](https://www.humanlabsaintpierre.org/)
 (actually, if you click on the link and see a child holding a weird thing with a motor attached to it, this is Emilie !

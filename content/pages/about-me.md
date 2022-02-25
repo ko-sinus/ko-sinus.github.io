@@ -10,4 +10,4 @@ Reality is I spend most of my time drinking coffee.
 I'm also a huge fan of music in general (I even play some from time to time).
 Lately, I have developed a keen interest in the British jazz scene. We can also chat about that.
 
-Please feel free to [reach me by email](mailto:message.koji@gmail.com>) if you feel like it.
+Please feel free to [reach me by email](mailto:message.koji@gmail.com) if you feel like it.

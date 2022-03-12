@@ -39,29 +39,39 @@ blockquote, q {
 table { border-collapse: collapse; border-spacing: 0; }
 
 html[data-theme='light'] {
-	background: var(--lightBg);
+	//background: var(--lightBg);
 	--lightBtn: #070003;
 	--lightBg: #fff;
 	--lightColor: #232323;
+	background: url(/images/background-white.jpg) no-repeat center center fixed;
+	background-size: cover;
+	height: 100%;
+	//text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
+	//text-shadow: 0 0 0.2em white, 0 0 0.2em #fff, 0 0 0.2em #fff
 }
 
 html[data-theme='dark'] {
-	background: var(--lightBg);
-   --lightBtn: #c4062f;
-   --lightBg: #232323;
-   --lightColor: #fff;
+	//background: var(--lightBg);
+	--lightBtn: #c4062f;
+	--lightBg: #232323;
+	--lightColor: #fff;
+	background: url(/images/background-black.png) no-repeat center center fixed;
+	background-size: cover;
+	height: 100%;
+	//text-shadow: 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000;
  }
 
 // Typography
 
 body {
-	background: var(--lightBg);
+	//background: var(--lightBg);
 	font-family: $main-font;
 	font-size: 16.5px;
 	line-height: 1.6;
 	color: var(--lightColor);
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%;
+	text-shadow: 0 0 2px var(--lightBg), 0 0 2px var(--lightBg), 0 0 2px var(--lightBg), 0 0 2px var(--lightBg), 0 0 2px var(--lightBg), 0 0 2px var(--lightBg), 0 0 2px var(--lightBg), 0 0 2px var(--lightBg), 0 0 2px var(--lightBg), 0 0 2px var(--lightBg), 0 0 2px var(--lightBg), 0 0 2px var(--lightBg), 0 0 2px var(--lightBg), 0 0 2px var(--lightBg), 0 0 2px var(--lightBg), 0 0 2px var(--lightBg), 0 0 2px var(--lightBg), 0 0 2px var(--lightBg), 0 0 2px var(--lightBg), 0 0 2px var(--lightBg);
 }
 
 article p {
@@ -69,10 +79,11 @@ article p {
 	line-height: 1.9;
 }
 
-h1, h2, h3 { font-weight: bold; color: var(--lightColor) }
+h1, h2, h3 { font-weight: bold; color: var(--lightColor); }
 
 h1 {
 	font-size: 1.7em;
+	//text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 
 h2 {
@@ -112,7 +123,7 @@ hr {
 	clear: both;
 	border: none;
 	height: 1px;
-	background-color: var(--lightBg);
+	//background-color: var(--lightBg);
 	color: var(--lightColor);
 	margin: 10px 5px;
 }
@@ -186,6 +197,7 @@ abbr, acronym, .abbr {
 code:not(pre code) {
 	font-family: $code-font;
 	color: #c4062f;
+	text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
 	background: #f5f5f5;
 	padding: 0.1em 0.3em;
 	border-radius: 3px;
@@ -370,6 +382,7 @@ aside div {
 	float: right;
 	display: block;
 	color: #555;
+	text-shadow: 1px 1px 0px #fff, 2px 1px 0px rgba(0,0,0,0.15);
 }
 
 .content {

@@ -43,11 +43,9 @@ html[data-theme='light'] {
 	--lightBtn: #070003;
 	--lightBg: #fff;
 	--lightColor: #232323;
-	background: url(/images/background-white.jpg) no-repeat center center fixed;
+	background: url(/images/background-white.webp) no-repeat center center fixed;
 	background-size: cover;
 	height: 100%;
-	//text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
-	//text-shadow: 0 0 0.2em white, 0 0 0.2em #fff, 0 0 0.2em #fff
 }
 
 html[data-theme='dark'] {
@@ -55,16 +53,24 @@ html[data-theme='dark'] {
 	--lightBtn: #c4062f;
 	--lightBg: #232323;
 	--lightColor: #fff;
-	background: url(/images/background-black.png) no-repeat center center fixed;
+	background: url(/images/background-black.webp) no-repeat center center fixed;
 	background-size: cover;
 	height: 100%;
-	//text-shadow: 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000;
- }
+}
 
 // Typography
 
 body {
 	//background: var(--lightBg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
 	font-family: $main-font;
 	font-size: 16.5px;
 	line-height: 1.6;

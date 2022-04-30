@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Touch sensing library
+title: Touch sensing library (C/C++)
 ---
 
 After I worked on <a href="/projects/assistive-robotic-arm-for-children">Emilie's assistive robotic arm</a>,

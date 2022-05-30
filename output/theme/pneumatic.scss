@@ -43,6 +43,7 @@ html[data-theme='light'] {
 	--lightBtn: #070003;
 	--lightBg: #fff;
 	--lightColor: #232323;
+	--codeColor: #c4062f;
 	background: url(/images/background-white.webp) no-repeat center center fixed;
 	background-size: cover;
 	height: 100%;
@@ -50,9 +51,10 @@ html[data-theme='light'] {
 
 html[data-theme='dark'] {
 	//background: var(--lightBg);
-	--lightBtn: #c4062f;
+	--lightBtn: #25b6de;
 	--lightBg: #232323;
 	--lightColor: #fff;
+	--codeColor: #e29e00;
 	background: url(/images/background-black.webp) no-repeat center center fixed;
 	background-size: cover;
 	height: 100%;
@@ -202,8 +204,8 @@ abbr, acronym, .abbr {
 
 code:not(pre code) {
 	font-family: $code-font;
-	color: #c4062f;
-	text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
+	color: var(--codeColor);
+	text-shadow: 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000, 0 0 2px #0000;//, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
 	background: #f5f5f5;
 	padding: 0.1em 0.3em;
 	border-radius: 3px;
@@ -293,7 +295,7 @@ label:after {
 }
 
 input:checked + label {
-	background: #c4062f;
+	background: #c49506;
 }
 
 input:checked + label:after {

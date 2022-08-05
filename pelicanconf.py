@@ -14,7 +14,7 @@ ROBOTS = "index, follow"
 SITEDESCRIPTION = "Koji Andria"
 SITELOGO = "/images/kosinus.jpg"
 SITENAME = "Koji Andria"
-BIO_TEXT = "MEng. & MSc. student."
+BIO_TEXT = "Health Devices Engineer."
 FOOTER_TEXT = '@2022 by Koji Andriamahery. Powered by <a href="http://getpelican.com">Pelican</a> and <a href="http://pages.github.com">GitHub&nbsp;Pages</a>.'
 SITETITLE = "kosinus"
 SITEURL = "https://ko-sinus.github.io"

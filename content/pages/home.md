@@ -4,9 +4,7 @@ Save_as: index.html
 
 ### My name is `Koji Andriamahery`. 
 
-I'm a last-year `MEng.` and `MSc.`
-student in `Mechatronics`, `Systems Engineering` and `Health Devices Engineering`.
-My professional goal is to work for meaningful and challenging human-centered projects that can improve lives.
+I'm a `Hardware Systems Engineer` in the medical field. My main interests lie in cross-disciplinary fields such as `Human-Computer Interaction` and `Human-Centered Computing`.
 
 This website enables me to write about <a href="/projects/">some of my projects</a>.
 

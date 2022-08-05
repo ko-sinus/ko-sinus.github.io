@@ -1,9 +1,11 @@
 Title: About me
 
-I am a soon-to-be French engineer. Voilà.
+I am a French engineer. Voilà.
 
-My main interests lie in cross-disciplinary fields such as `Human-Computer Interaction` and `Human-Centered Computing`.
-With a strong emphasis on the medical/healthcare fields, most of my projects consist of investigating anthropometrics in order to interact with data in a more tangible and physical way. You can find <a href="/projects">some of them here on this website</a>.
+I received my `MEng.` in `Mechatronics` and `Systems Engineering` from IMT Mines Alès, France, and my `MSc.` in `Health Devices Engineering` from Université de Montpellier, France, both in 2022.
+
+I am interested in human-centered initiatives that can improve day-to-day life.
+With a strong emphasis on the medical/healthcare fields, most of my projects consist in investigating anthropometrics in order to interact with data in a more tangible and physical way. You can find <a href="/projects">some of them here on this website</a>.
 
 Reality is I spend most of my time drinking coffee.
 

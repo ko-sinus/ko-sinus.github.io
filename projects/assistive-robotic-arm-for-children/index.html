@@ -4,7 +4,7 @@
 	<!-- Basic Metas -->
 	<meta charset="utf-8">
 	<title>Assistive robotic arm for children | Koji Andria</title>
-	<meta name="description" content="This was the first human-computer interaction for healthcare project I made. It was intended for an 11 years old French child named Emilie. At the time, I was working at the HumanLab Saint-Pierre (actually, if you click on the link and see …">
+	<meta name="description" content="This was the first human-computer interaction for healthcare project I made. It was intended for an 11 years old French child named Emilie. Before I go into the beautiful details behind it all, here is a video promoting our success : At the …">
 	<meta name="author" content="kosinus">
 	<link rel="author" href=""/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -15,7 +15,7 @@
 	<meta name="twitter:domain" content="https://ko-sinus.github.io">
 	<meta name="twitter:site" content="">
 	<meta property="og:title" content="Assistive robotic arm for children">
-	<meta property="og:description" content="This was the first human-computer interaction for healthcare project I made. It was intended for an 11 years old French child named Emilie. At the time, I was working at the HumanLab Saint-Pierre (actually, if you click on the link and see …">
+	<meta property="og:description" content="This was the first human-computer interaction for healthcare project I made. It was intended for an 11 years old French child named Emilie. Before I go into the beautiful details behind it all, here is a video promoting our success : At the …">
 	<meta property="og:image" content="https://ko-sinus.github.io/images/avatar.png">
 	<meta property="og:type" content="article">
 	<meta property="og:url" content="https://ko-sinus.github.io/projects/assistive-robotic-arm-for-children/">
@@ -52,7 +52,7 @@
 		<aside>
 			<a href="/"><img id="avatar" alt="Site Avatar" src="/images/avatar.jpg"></a>
 			<div id="name"><a href="/">Koji Andria</a></div>
-			<div id="bio">MEng. & MSc. student.</div>
+			<div id="bio">Health Devices Engineer.</div>
 
 			<div id="sidebar-links">
 				<a href="/about-me/">About me</a>&nbsp;|&nbsp;<a href="/resume/">Resume</a>&nbsp;|&nbsp;<a href="/projects/">
@@ -82,10 +82,13 @@ Projects</a>
 	<time class="date" datetime="2022-02-05 00:00:00+01:00">Sam 05 février 2022</time>
 	<div class="content">
 		<p>This was the first <code>human-computer interaction for healthcare</code> project I made.
-It was intended for an 11 years old French child named Emilie.
-At the time, I was working at the <a href="https://www.humanlabsaintpierre.org/">HumanLab Saint-Pierre</a>
-(actually, if you click on the link and see a child holding a weird thing with a motor attached to it, this is Emilie !
-I am the man behind her at her right - the man on the left is the chief research engineer of the HumanLab.).
+It was intended for an 11 years old French child named Emilie.</p>
+<p>Before I go into the beautiful details behind it all, here is a video promoting our success :</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PhL7JxOnTew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>At the time, I was working at the <a href="https://www.humanlabsaintpierre.org/">HumanLab Saint-Pierre</a>
+(actually, if on their homepage you see a child holding a weird thing with a motor attached to it, this is Emilie !
+I am the man behind her at her right - the man on the left is the chief research engineer of the HumanLab).
 The most beautiful aspect of this project is that <code>it is entirely open-source</code> - and that is why I can share all of these details with you.</p>
 <h2>HumanLabs ?</h2>
 <p>The open-source thing is actually a common aspect to all HumanLabs projects. If you don't know what HumanLabs are, <a href="https://myhumankit.org/en/home/">you can find more about them here</a>.
@@ -95,7 +98,7 @@ Their goal is to encourage people with physical disabilities to conceive and man
 the HumanLab Saint-Pierre, located in the South of France, works closely with the <a href="https://www.institut-st-pierre.com/">Institut Saint-Pierre paediatric hospital</a>, and thus benefits from a dedicated medical team support (occupational therapists, ortho-prosthetists, doctors, ...).
 This cross-disciplinary team setting was key for the success of this project, as it linked <code>traditional orthosis manufacturing</code>, <code>3D printing</code> and <code>electronics</code>.</p>
 <h2>Short context</h2>
-<p>Emilie is a timid but lovely child who has an injured arm : <code>her right arm is paralysed from her shoulder to her wrist</code>, keeping her from any right elbow motion.
+<p>Emilie is a timid but lovely child who has an injured arm : <code>her right arm is paralysed from her shoulder to her wrist</code>, keeping her from any elbow motion from one side.
 Before this project started, she had a traditional mechanical orthosis - she had to lock her injured arm with the other one on one specific position.
 My role there was to propose a way to enable the elbow motion in the most natural way possible.
 Fortunatly since she could still move her fingers to grip something on her right hand, I was able to propose <code>an arm positioning system using the very same injured limb</code>.</p>
@@ -104,7 +107,9 @@ Fortunatly since she could still move her fingers to grip something on her right
 As this project was not 'childish' enough, I based the touch sensing technology on <a href="https://la.disneyresearch.com/publication/touche-enhancing-touch-interaction-on-humans-screens-liquids-and-everyday-objects/">Disney Research Lab's Touché project</a>,
 mainly because of its hardware simplicity (only passive components). Hardware simplicity enables efficient scalability and reproductibility at low cost, both essential for any open-source project.
 Huge thanks to Danish makers <a href="http://blog.dzl.dk/">DZL</a>, <a href="http://www.hobye.dk/">Mads Hobye</a> and <a href="http://illutron.dk/">Illutron</a> for their preliminary work on bringing Disney's research into the maker world.</p>
-<p>The final solution I designed consists of a <code>touch-activated mechanism which moves a linear actuator for arm positioning</code> (inspiration from <a href="https://sites.google.com/site/ourkidscandoanything/">Lorelei's project</a>). You can find <a href="https://drive.google.com/file/d/1Cl-wryliRHkoRjxJLqVjsEyC7giJl1Dj/view?usp=sharing">here</a> an early stage (not the final control design, I insist) proof-of-concept using a long press to move the arm, and short-clicks to control directions. The final control commands are much more simplified since it only uses 2 types of input : <code>short-click</code> or <code>long press</code>. It goes up if one short click is detected before a long press, goes down is there is no short click before a long press. Unfortunately, I just happen not to have a more recent video.</p>
+<p>The final solution I designed consists of a <code>touch-activated mechanism which moves a linear actuator for arm positioning</code> (inspiration from <a href="https://sites.google.com/site/ourkidscandoanything/">Lorelei's project</a>). You can find below an early stage (<em>not the final control design, I insist</em>) proof-of-concept using a long press to move the arm, and short-clicks to control directions. <em>The final control commands are much more simplified</em> since it only uses 2 types of input : <code>short-click</code> or <code>long press</code>. It goes up if one short click is detected before a long press, goes down is there is no short click before a long press. Unfortunately, I just happen not to have a more recent video.</p>
+<iframe src="https://drive.google.com/file/d/1Cl-wryliRHkoRjxJLqVjsEyC7giJl1Dj/preview" width="560" height="315"></iframe>
+
 <p>If you want full documentation on this, you can <a href="https://wikilab.myhumankit.org/index.php?title=Projets:Orth%C3%A8se_de_Coude_Robotis%C3%A9e">directly head to this link</a>.
 For non-french speakers, <a href="https://github.com/ko-sinus/emilie-arm">source files are on my Github</a>.</p>
 	</div>

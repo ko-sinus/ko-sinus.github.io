@@ -55,6 +55,7 @@ LINKS = (("home", "/"),)
 SOCIAL_ICONS = [
     ('https://www.linkedin.com/in/koji-andria/lang?=ENG', 'LinkedIn', 'fa-linkedin'),
     ('https://github.com/ko-sinus', 'GitHub', 'fa-github'),
+    ('mailto:koji.andria@e.email', 'Email', 'fa-envelope'),
 ]
 
 PLUGIN_PATHS = ['myplugins']

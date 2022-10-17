@@ -17,7 +17,7 @@ The most beautiful aspect of this project is that `it is entirely open-source` -
 
 
 ## HumanLabs ?
-The open-source thing is actually a common aspect to all HumanLabs projects. If you don't know what HumanLabs are, [you can find more about them here](https://myhumankit.org/en/home/).
+The open-source thing is actually a common aspect to all HumanLabs projects. If you don't know what HumanLabs are, you can find more about them [here](https://myhumankit.org/en/home/).
 HumanLabs basically consist of Fablabs that are specifically dedicated to `assistive technologies`.
 Their goal is to encourage people with physical disabilities to conceive and manufacture their own assistive technologies, using a classic fablab's equipment (3D printing, open-source electronics, ...).
 
@@ -38,7 +38,7 @@ As this project was not 'childish' enough, I based the touch sensing technology 
 mainly because of its hardware simplicity (only passive components). Hardware simplicity enables efficient scalability and reproductibility at low cost, both essential for any open-source project.
 Huge thanks to Danish makers [DZL](http://blog.dzl.dk/), [Mads Hobye](http://www.hobye.dk/) and [Illutron](http://illutron.dk/) for their preliminary work on bringing Disney's research into the maker world.
 
-The final solution I designed consists of a `touch-activated mechanism which moves a linear actuator for arm positioning` (inspiration from [Lorelei's project](https://sites.google.com/site/ourkidscandoanything/)). You can find below an early stage (*not the final control design, I insist*) proof-of-concept using a long press to move the arm, and short-clicks to control directions. *The final control commands are much more simplified* since it only uses 2 types of input : `short-click` or `long press`. It goes up if one short click is detected before a long press, goes down is there is no short click before a long press. Unfortunately, I just happen not to have a more recent video.
+The final solution I designed consists of a `touch-activated mechanism which moves a linear actuator for arm positioning` (inspiration from [Lorelei's project](https://sites.google.com/site/ourkidscandoanything/)). You can find below an early stage (*not the final control design, I insist*) proof-of-concept using a long press to move the arm, and short-clicks to control directions. *The final control commands are much more simplified* since it only uses 2 types of input : `short-click` or `long press`. A long press input moves the arm, while a short-click input defines the direction : it goes up if one short click is detected before a long press, goes down is there is no short click before a long press. Unfortunately, I just happen not to have a more recent video.
 
 <iframe src="https://drive.google.com/file/d/1Cl-wryliRHkoRjxJLqVjsEyC7giJl1Dj/preview" width="560" height="315"></iframe>
 

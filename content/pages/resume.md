@@ -1,6 +1,6 @@
 Title: Resume
 
-I have a background in `hardware` (both `mechanical` and `electronic`) `designing`, `rapid prototyping`, `systems engineering`, `health sensing` and `mechatronics & embedded systems`.
+I have a background in `hardware` (both `mechanical` and `electronic`) `designing`, `rapid prototyping`, `systems engineering`, `health sensing` and `mechatronics & embedded systems development`.
 My professional experiences mostly relate to the healthcare industry.
 
 You can check my resume [in English here]({static}/pdfs/ResumeEN.pdf) - otherwise [in French here]({static}/pdfs/ResumeFR.pdf).

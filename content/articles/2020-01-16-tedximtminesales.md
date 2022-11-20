@@ -3,7 +3,7 @@ layout: post
 title: TEDxIMTMinesAles
 ---
 
-This is one of my biggest `non-technological initiative`. During my 2nd year as a graduate student, I gathered a few of my classmates, some of my university's administrators, some CEOs and regional actors and a few brillant minds and I reunited them for a `TEDx conference`.
+This is one of my biggest `non-technological initiative`. During my 1st year as a graduate student, I gathered a few of my classmates, some of my university's administrators, some CEOs and regional actors and a few brillant minds and I reunited them for a `TEDx conference`.
 
 Below are the official recordings from TEDxTalks YouTube channel. There's a lot of topics covered in there : `biomimicry`, `emotional AI`, `climate change` or even `prosthetics`. How they all gather together, you ask ? Well, it's all about the theme : `« Alter-Natifs »` (french for « alternatives »), which is intentionally spelled as a combination of the words `« alter »` (that refers to "the other") and `« natifs »` (french for « natives »). It literally means « born different », or « born in another way ». Under this theme `I wanted to illustrate change`, from its mechanism to its consequences, at different level and through different perspectives. I find the whole process of change very interesting as it leads to very specific and sometimes opposite behaviours. Just think about the last 20 years and how rapidly our society evolved looking at technology, economy, environment, individuals, … Note that `I am talking about evolution, which is unfortunately not necessarily linked to progress`.
 

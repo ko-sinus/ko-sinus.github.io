@@ -13,9 +13,10 @@ $main-font: Corbel;
 $code-font: $main-font;
 
 $social-icons: (
+	"linkedin" rgb(21,105,191),
 	"twitter" #55acee,
 	"google-plus-square" #dd4b39,
-	"github" #171515,
+	"github" #7d7b7b,
 	"soundcloud" #f70,
 	"instagram" #833ab4,
 );
@@ -146,19 +147,19 @@ a {
 	outline: 0;
 
 	&:hover, &:focus {
-		color: #000;
+		color: var(--codeColor);
 		text-decoration: underline;
 	}
 
 	&.icon {
 		padding: 0 2px;
 		font-size: 20px;
-		color: rgb(2, 1, 1);
+		color: var(--lightColor);
 		transition: color 0.25s ease;
 
 		&:hover {
 			text-decoration: none;
-			color: #222;
+			color: var(--codeColor);
 			@each $icon, $colour in $social-icons {
 				&.fa-#{$icon} { color: $colour; }
 			}

@@ -1,6 +1,6 @@
 Title: About me
 
-### I am a French engineer. Voilà.
+### I'm a French engineer. Voilà.
 
 I am interested in `human-centered initiatives` that can improve day-to-day life.
 With a strong emphasis on the healthcare field, most of my projects consist in `investigating anthropometrics` in order to `interact with data in a more tangible and physical way`. You can find <a href="/projects">some of them here on this website</a>.

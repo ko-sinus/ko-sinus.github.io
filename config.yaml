@@ -233,7 +233,7 @@ params:
         info:
           enable: false
         featuredLink:
-          enable: true
+          enable: false
           name: View the paper
           url: "https://example.com"
         content: |
@@ -295,7 +295,7 @@ params:
 
   # projects
   projects:
-    enable: true
+    enable: false
     # title: "Custom Name"
     # items:
     #   - title: Hugo Profile

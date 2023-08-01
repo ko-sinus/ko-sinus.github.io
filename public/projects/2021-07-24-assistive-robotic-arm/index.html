@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=/fav.png type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+<meta property="og:title" content="Pediatric Robotic Arm" />
+<meta property="og:description" content="This was the first human-computer interaction for healthcare project I made. It was intended for an 11 years old French child named Emilie.
+Before I go into the beautiful details behind it all, here is a video promoting our success :
+At the time, I was working at the HumanLab Saint-Pierre (actually, if on their homepage you see a child holding a weird thing with a motor attached to it, this is Emilie !" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ko-sinus.github.io/projects/2021-07-24-assistive-robotic-arm/" /><meta property="article:section" content="projects" />
+<meta property="article:published_time" content="2021-07-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-07-24T00:00:00+00:00" /><meta property="og:site_name" content="Koji Andria" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Pediatric Robotic Arm"/>
+<meta name="twitter:description" content="This was the first human-computer interaction for healthcare project I made. It was intended for an 11 years old French child named Emilie.
+Before I go into the beautiful details behind it all, here is a video promoting our success :
+At the time, I was working at the HumanLab Saint-Pierre (actually, if on their homepage you see a child holding a weird thing with a motor attached to it, this is Emilie !"/>
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+
+
+
+<style>
+    :root {
+        --text-color: black;
+        --text-secondary-color: #54BAB9;
+        --background-color: #FBF8F1;
+        --secondary-background-color: #fff;
+        --primary-color: #54BAB9;
+        --secondary-color: white;
+
+         
+        --text-color-dark: #DDE6ED;
+        --text-secondary-color-dark: grey;
+        --background-color-dark: #27374D;
+        --secondary-background-color-dark: #27374D;
+        --primary-color-dark: #DDE6ED;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        width: .5em;
+        height: .5em;
+        background-color: var(--background-color);
+    }
+    
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px var(--background-color);
+        border-radius: 1rem;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background-color: var(--secondary-color);
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+<meta name="description" content="">
+<link rel="stylesheet" href="/css/single.css">
+
+
+<script defer src="/fontawesome-5/all-5.15.4.js"></script>
+
+  <title>
+Pediatric Robotic Arm | Koji Andria
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+<header>
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                
+                <img src="/fav.png" width="30" height="30"
+                    class="d-inline-block align-top">
+                Koji Andria
+                
+            </a>
+
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            About Me
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Work Experience
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#education"
+                            aria-label="education">
+                            Education
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#contact"
+                            aria-label="contact">
+                            Contact
+                        </a>
+                    </li>
+                    
+
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/projects" title="Projects posts">
+                            
+                            Projects
+                        </a>
+                    </li>
+                    
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="single">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="pr-lg-4">
+          <div class="title mb-5">
+            <h1 class="text-center mb-4">Pediatric Robotic Arm</h1>
+            <div class="text-center">
+               
+              <small>|</small>
+              Jul 24, 2021
+
+              
+              <span id="readingTime">
+                min read
+              </span>
+              
+            </div>
+          </div>
+          
+          <div class="featured-image">
+            <img class="img-fluid" src="/images/orthosis.jpg" alt="Pediatric Robotic Arm">
+          </div>
+          
+          <article class="page-content  p-2">
+          <p>This was the first <code>human-computer interaction for healthcare</code> project I made.
+It was intended for an 11 years old French child named Emilie.</p>
+<p>Before I go into the beautiful details behind it all, here is a video promoting our success :</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PhL7JxOnTew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>At the time, I was working at the <a href="https://www.humanlabsaintpierre.org/">HumanLab Saint-Pierre</a>
+(actually, if on their homepage you see a child holding a weird thing with a motor attached to it, this is Emilie !
+I am the man behind her at her right - the man on the left is the chief research engineer of the HumanLab).
+The most beautiful aspect of this project is that <code>it is entirely open-source</code> - and that is why I can share all of these details with you.</p>
+<h2 id="humanlabs-">HumanLabs ?</h2>
+<p>The open-source thing is actually a common aspect to all HumanLabs projects. If you don&rsquo;t know what HumanLabs are, you can find more about them <a href="https://myhumankit.org/en/home/">here</a>.
+HumanLabs basically consist of Fablabs that are specifically dedicated to <code>assistive technologies</code>.
+Their goal is to encourage people with physical disabilities to conceive and manufacture their own assistive technologies, using a classic fablab&rsquo;s equipment (3D printing, open-source electronics, &hellip;).</p>
+<p>Not only did I had the chance to work within one of them, but I actually worked in a specific one :
+the HumanLab Saint-Pierre, located in the South of France, works closely with the <a href="https://www.institut-st-pierre.com/">Institut Saint-Pierre paediatric hospital</a>, and thus benefits from a dedicated medical team support (occupational therapists, ortho-prosthetists, doctors, &hellip;).
+This cross-disciplinary team setting was key for the success of this project, as it linked <code>traditional orthosis manufacturing</code>, <code>3D printing</code> and <code>electronics</code>.</p>
+<h2 id="short-context">Short context</h2>
+<p>Emilie is a timid but lovely child who has an injured arm : <code>her right arm is paralysed from her shoulder to her wrist</code>, keeping her from any elbow motion from one side.
+Before this project started, she had a traditional mechanical orthosis - she had to lock her injured arm with the other one on one specific position.
+My role there was to propose a way to enable the elbow motion in the most natural way possible.
+Fortunatly since she could still move her fingers to grip something on her right hand, I was able to propose <code>an arm positioning system using the very same injured limb</code>.</p>
+<h2 id="disneys-magic">Disney&rsquo;s magic</h2>
+<p>After reviewing some interaction technologies, I decided to use <code>capacitive sensing</code> since it also resolved the direction control problem - flexion or extension.
+As this project was not &lsquo;childish&rsquo; enough, I based the touch sensing technology on <a href="https://la.disneyresearch.com/publication/touche-enhancing-touch-interaction-on-humans-screens-liquids-and-everyday-objects/">Disney Research Lab&rsquo;s Touché project</a>,
+mainly because of its hardware simplicity (only passive components). Hardware simplicity enables efficient scalability and reproductibility at low cost, both essential for any open-source project.
+Huge thanks to Danish makers <a href="http://blog.dzl.dk/">DZL</a>, <a href="http://www.hobye.dk/">Mads Hobye</a> and <a href="http://illutron.dk/">Illutron</a> for their preliminary work on bringing Disney&rsquo;s research into the maker world.</p>
+<p>The final solution I designed consists of a <code>touch-activated mechanism which moves a linear actuator for arm positioning</code> (inspiration from <a href="https://sites.google.com/site/ourkidscandoanything/">Lorelei&rsquo;s project</a>). <em>The final control commands</em> uses 2 types of input : <code>short-click</code> or <code>long press</code>. A long press input moves the arm, while a short-click input defines the direction : it goes up if one short click is detected before a long press, goes down is there is no short click before a long press.</p>
+<p>If you want full documentation on this, you can <a href="https://wikilab.myhumankit.org/index.php?title=Projets:Orth%C3%A8se_de_Coude_Robotis%C3%A9e">directly head to this link</a>.
+For non-french speakers, <a href="https://github.com/ko-sinus/emilie-arm">source files are on my Github</a>.</p>
+
+          </article>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <div class="sticky-sidebar">
+          
+          <aside class="toc">
+              <h5>
+                Table Of Contents
+              </h5>
+              <div class="toc-content">
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#humanlabs-">HumanLabs ?</a></li>
+    <li><a href="#short-context">Short context</a></li>
+    <li><a href="#disneys-magic">Disney&rsquo;s magic</a></li>
+  </ul>
+</nav>
+              </div>
+          </aside>
+          
+
+          
+
+          
+          <aside class="social">
+            <h5>Social</h5>
+            <div class="social-content">
+              <ul class="list-inline">
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://twitter.com/share?text=Pediatric%20Robotic%20Arm&url=https%3a%2f%2fko-sinus.github.io%2fprojects%2f2021-07-24-assistive-robotic-arm%2f">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=Pediatric%20Robotic%20Arm: https%3a%2f%2fko-sinus.github.io%2fprojects%2f2021-07-24-assistive-robotic-arm%2f">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href='mailto:?subject=Pediatric%20Robotic%20Arm&amp;body=Check%20out%20this%20project https%3a%2f%2fko-sinus.github.io%2fprojects%2f2021-07-24-assistive-robotic-arm%2f'>
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+        
+      </div>
+    </div>
+  </div>
+  <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+    <i class="fas fa-angle-up"></i>
+  </button>
+</section>
+
+
+<div class="progress">
+  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<Script src="/js/scrollProgressBar.js"></script>
+
+
+<script>
+  var topScroll = document.getElementById("topScroll");
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topScroll.style.display = "block";
+    } else {
+      topScroll.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+
+<script src="/js/readingTime.js"></script>
+
+
+
+  </div><footer>
+    
+    
+
+    <div class="text-center pt-2">
+    
+
+    
+    <span class="px-1">
+        <a href="https://www.linkedin.com/in/koji-andria/lang?=ENG" aria-label="linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
+                viewBox="0 0 512 512">
+                <rect width="512" height="512" fill="#0077b5" rx="15%" />
+                <circle cx="142" cy="138" r="37" />
+                <path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198" />
+                <path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32" />
+            </svg>
+        </a>
+    </span>
+    
+
+    
+
+    
+
+    
+
+    
+    <a href="mailto:koji.andria@e.email" aria-label="email">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="48px" height="48px">
+            
+            <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+        </svg>
+    </a>
+    
+    
+    
+    <a href="https://www.researchgate.net/profile/Koji-Andriamahery" aria-label="researchgate">
+        <svg style="color: rgb(99, 207, 178);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="48px" height="48px"><path d="M0 32v448h448V32H0zm262.2 334.4c-6.6 3-33.2 6-50-14.2-9.2-10.6-25.3-33.3-42.2-63.6-8.9 0-14.7 0-21.4-.6v46.4c0 23.5 6 21.2 25.8 23.9v8.1c-6.9-.3-23.1-.8-35.6-.8-13.1 0-26.1.6-33.6.8v-8.1c15.5-2.9 22-1.3 22-23.9V225c0-22.6-6.4-21-22-23.9V193c25.8 1 53.1-.6 70.9-.6 31.7 0 55.9 14.4 55.9 45.6 0 21.1-16.7 42.2-39.2 47.5 13.6 24.2 30 45.6 42.2 58.9 7.2 7.8 17.2 14.7 27.2 14.7v7.3zm22.9-135c-23.3 0-32.2-15.7-32.2-32.2V167c0-12.2 8.8-30.4 34-30.4s30.4 17.9 30.4 17.9l-10.7 7.2s-5.5-12.5-19.7-12.5c-7.9 0-19.7 7.3-19.7 19.7v26.8c0 13.4 6.6 23.3 17.9 23.3 14.1 0 21.5-10.9 21.5-26.8h-17.9v-10.7h30.4c0 20.5 4.7 49.9-34 49.9zm-116.5 44.7c-9.4 0-13.6-.3-20-.8v-69.7c6.4-.6 15-.6 22.5-.6 23.3 0 37.2 12.2 37.2 34.5 0 21.9-15 36.6-39.7 36.6z" fill="#63cfb2"></path></svg>
+    </a>
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            <div class="pb-2">
+                <a href="https://ko-sinus.github.io" title="Koji Andria">
+                    <img alt="Footer logo" src="/fav.png"
+                        height="40px" width="40px">
+                </a>
+            </div>
+            &copy; 2023  All rights reserved
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                    title="Designed and developed by gurusabarish">
+                    Hugo Profile
+                </a>
+            </div>
+        </div>
+    </div>
+</div></footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Koji Andria</title>
+    <link>https://ko-sinus.github.io/projects/</link>
+    <description>Recent content in Projects on Koji Andria</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://ko-sinus.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Augmented Wheelchair</title>
+      <link>https://ko-sinus.github.io/projects/2023-06-8-fabrikarium/</link>
+      <pubDate>Fri, 23 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ko-sinus.github.io/projects/2023-06-8-fabrikarium/</guid>
+      <description>It tuns out the HumanLab Saint-Pierre was particularly busy this year. How busy ? Busy enough to hold its first &amp;ldquo;hackathon like&amp;rdquo; event, the so-called fabrikarium. Since HumanLabs are FabLabs specially dedicated to assistive technologies, their fabrikarium events consist of prototyping workshops dedicated to tackle disability-related issues. People from all over France came together in 4 teams of 10 makers, whether they be engineers, researchers, healthcare professionnals, students, retiree, etc. Anyone would be welcomed to contribute, as long as they have an some brain time to grant, a helping hand to give and a big warm heart.</description>
+    </item>
+    
+    <item>
+      <title>Pediatric Robotic Arm</title>
+      <link>https://ko-sinus.github.io/projects/2021-07-24-assistive-robotic-arm/</link>
+      <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ko-sinus.github.io/projects/2021-07-24-assistive-robotic-arm/</guid>
+      <description>This was the first human-computer interaction for healthcare project I made. It was intended for an 11 years old French child named Emilie.
+Before I go into the beautiful details behind it all, here is a video promoting our success :
+At the time, I was working at the HumanLab Saint-Pierre (actually, if on their homepage you see a child holding a weird thing with a motor attached to it, this is Emilie !</description>
+    </item>
+    
+    <item>
+      <title>Moral Uncertainty for AI</title>
+      <link>https://ko-sinus.github.io/projects/2020-07-02-moraluncertainty/</link>
+      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ko-sinus.github.io/projects/2020-07-02-moraluncertainty/</guid>
+      <description>(Update : the paper has been published ! Check it out here : paper link.)
+I had the opportunity to work at TU Delft, the oldest technical university in The Netherlands, which also happens to be ranked among the top 10 engineering and technology universities in the world. It may sound cool, but the coolest was the proposed project : I was offered to work on the ethical decision making process of autonomous systems, with a focus on autonomous vehicles.</description>
+    </item>
+    
+    <item>
+      <title>TEDxIMTMinesAles</title>
+      <link>https://ko-sinus.github.io/projects/2020-01-16-tedximtminesales/</link>
+      <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ko-sinus.github.io/projects/2020-01-16-tedximtminesales/</guid>
+      <description>This is one of my biggest non-technological initiative. During my 1st year as a graduate student, I gathered a few of my classmates, some of my university&amp;rsquo;s administrators, some CEOs and regional actors and a few brillant minds and I reunited them for a TEDx conference.
+Below are the official recordings from TEDxTalks YouTube channel. There&amp;rsquo;s a lot of topics covered in there : biomimicry, emotional AI, climate change or even prosthetics.</description>
+    </item>
+    
+  </channel>
+</rss>

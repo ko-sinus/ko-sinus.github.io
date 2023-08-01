@@ -6,10 +6,12 @@ draft: false
 image: /images/moralmachine.png
 ---
 
+(**Update : the paper has been published !** Check it out here : [paper link](https://www.frontiersin.org/articles/10.3389/fnrgo.2023.1147211/full).)
+
 I had the opportunity to work at [TU Delft](https://www.tudelft.nl/), the oldest technical university in The Netherlands, which also happens to be ranked among the top 10 engineering and technology universities in the world. It may sound cool, but the coolest was the proposed project : I was offered to work on the `ethical decision making` process of autonomous systems, with a focus on `autonomous vehicles`. I was there to work on the understanding and modeling of decision-making mechanisms incorporating `normative uncertainty` (uncertainty on which ethical theory is the most appropriate) for autonomous systems, and how to take `human values and credences towards ethical principles` (both at an individual and society's scales) into account when making critical decisions. How cool is that ? Well, our work was based on the very popular MIT's [Moral Machine experiment](https://www.moralmachine.net/), whose results were [published in Nature in 2018](https://www.nature.com/articles/s41586-018-0637-6). So, pretty cool.
 
 
-![AiTech comic strip](https://pbs.twimg.com/media/Fd0GOYKXgAAggJ8?format=jpg&name=large "AiTech comic strip. Important but fun stuff")
+![AiTech comic strip](https://pbs.twimg.com/media/Fd0GOYKXgAAggJ8?format=jpg&name=large "AiTech comic strip. Fun but important stuff")
 | <b>Image Credits - AiTech communication</b>|
 
 ## The AiTech initiative

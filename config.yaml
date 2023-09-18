@@ -97,7 +97,7 @@ params:
     title: "Koji."
     subtitle: "I build healthcare toolkits"
     content: "I'm a `Hardware Research Engineer` in the medical field. My main interests lie in cross-disciplinary fields such as 
-      `Bio-sensing` and `Computational Physiology`."
+      `Bio-sensing` and `Clinical Decision support systems`."
     image: /images/avatar.jpg
     bottomImage:
       enable: true
@@ -127,7 +127,7 @@ params:
       I'm a French engineer. Voilà.
 
       I am interested in `human-centered initiatives` that can improve day-to-day life.
-      I believe in a technology that fits and adapts to our needs, as we unfortunately too often observe individuals adapting themself to technology.
+      I believe in a technology that fits and adapts to our needs, which never replaces but always complements.
       With a strong emphasis on the healthcare field, most of my projects consist in `investigating anthropometrics` -
       whether to help physicians make decision or patients move their bodies, but over all, to blink a LED.
       You can find <a href="/projects">some of them here on this website</a>.
@@ -143,7 +143,7 @@ params:
     enable: true
     title: "Work Experience"
     items:
-      - job: "Research Engineer - Hardware, Data"
+      - job: "Research Engineer - Hardware, DAQ"
         company: "Stella Surgical"
         companyUrl: "https://stellasurgical.com/en/home-page/"
         date: "January 2022 - present"
@@ -151,13 +151,13 @@ params:
           enable: true
           content: Prior to this role, I worked as a systems engineer for more than a year
         content: |
-          I am currently working as a research engineer at Stella Surgical, as part of an industrial Ph.D fellowship.
+          I am currently working as a research engineer at Stella Surgical, with a focus on hardware innovation.
 
           - Contributed to new types of physiological data analysis techniques for liver grafts.
           - Worked on clinical process modeling and decision support systems for medical transplant teams.
           - Led technical faisability studies on R&D early-stage projects, including medical regulatory requirements for both software and hardware.
 
-          Prior to this role, I served the company as a hardware systems engineer for more than a year. I was mainly responsible of embedded systems integration and product development.
+          Prior to this role, I served the company as a hardware systems engineer for more than a year. I was mainly responsible of embedded systems integration and new product development.
 
       - job: "Hardware/Firmware Engineer"
         company: "LIRMM"
@@ -214,12 +214,6 @@ params:
     # title: "Custom Name"
     index: false
     items:
-      # - title: "Ph.D in Robotics and Microelectronic Systems"
-      #   school:
-      #     name: "Université de Montpellier, France"
-      #     url: "https://www.umontpellier.fr/en/"
-      #   date: "2023 - present"
-      
       - title: "Master of Science in Digital Health"
         school:
           name: "Université de Montpellier, France"

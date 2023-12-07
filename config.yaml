@@ -97,7 +97,7 @@ params:
     title: "Koji."
     subtitle: "I build healthcare toolkits"
     content: "I'm a `Hardware Research Engineer` in the medical field. My main interests lie in cross-disciplinary fields such as 
-      `Bio-sensing` and `Clinical Decision support systems`."
+      `Health-sensing` and `Clinical Decision support systems`."
     image: /images/avatar.jpg
     bottomImage:
       enable: true
@@ -137,9 +137,9 @@ params:
   # Experience
   experience:
     enable: true
-    title: "Work Experience"
+    title: "Work Experiences"
     items:
-      - job: "Research Engineer - Hardware, DAQ"
+      - job: "Research and Development Engineer - Hardware, DAQ"
         company: "Stella Surgical"
         companyUrl: "https://stellasurgical.com/en/home-page/"
         date: "January 2022 - present"
@@ -147,30 +147,27 @@ params:
           enable: true
           content: Prior to this role, I worked as a systems engineer for more than a year
         content: |
-          I am currently working as a research engineer at Stella Surgical, with a focus on hardware innovation.
+          I am currently working as a research and development engineer at Stella Surgical, with a focus on hardware innovation.
 
-          - Contributed to new types of physiological data analysis techniques for liver grafts.
-          - Worked on clinical process modeling and decision support systems for medical transplant teams.
-          - Led technical faisability studies on R&D early-stage projects, including medical regulatory requirements for both software and hardware.
+          - Contributed to new types of health-sensing techniques for liver grafts viability assessment.
+          - Led product engineering for medical embedded systems - organ tracking systems, machine perfusion devices simulation platform.
+          - Led technical faisability studies on R&D early-stage projects, including medical regulatory requirements for both embedded software and hardware.
 
           Prior to this role, I served the company as a hardware systems engineer for more than a year. I was mainly responsible of embedded systems integration and new product development.
 
-      - job: "Hardware/Firmware Engineer"
+      - job: "Embedded Systems Engineer"
         company: "LIRMM"
         companyUrl: "https://www.lirmm.fr/lirmm-en/"
         date: "September 2021 - January 2022"
         info:
           enable: true
           content: LIRMM stands for Laboratory of Computer Science, Robotics and Microelectronics of Montpellier
-        # featuredLink:
-        #   enable: true
-        #   url: "https://example.com"
         content: |
           Led a personal research initiative, which was about embedded hand gesture recognition and bio-sensing for sign language interpretation.
           
             - Worked on hardware architecture definition.
             - MCAD/ECAD rapid prototyping.
-            - Signal processing & firmware programming.
+            - Signal processing, firmware programming and edge ML.
 
       - job: "Assistive Technology Designer"
         company: "HumanLab Saint-Pierre"
@@ -184,11 +181,11 @@ params:
           name: View the project
           url: "https://www.youtube.com/watch?v=PhL7JxOnTew"
         content: |
-          Worked closely with a medical team (occupational therapists, ortho-prosthetists, doctors) from the Institut Saint-Pierre (paediatric hospital).
+          Worked closely with a medical team (occupational therapists, ortho-prosthetists, doctors) from the Institut Saint-Pierre (private children's hospital).
             - Developed an assistive robotic orthosis for children.
             - Designed hardware assistive technologies using rapid-prototyping techniques with end-users.
 
-      - job: "Research Intern"
+      - job: "Graduate Research Intern"
         company: "TU Delft"
         companyUrl: "https://www.tudelft.nl/en/"
         date: "May 2020 - August 2020"
@@ -217,13 +214,13 @@ params:
         date: "2022"
         content: |-
           Major:
-            Health Devices Engineering 
+            Health Devices Engineering
           
            - Ranked 1st
 
       - title: "Diplôme d'Ingénieur (M.Eng) in Systems Engineering"
         school:
-          name: "École des Mines d'Alès, France"
+          name: "IMT Mines d'Alès, France"
           url: "https://www.imt-mines-ales.fr/en"
         date: "2022"
         content: |-

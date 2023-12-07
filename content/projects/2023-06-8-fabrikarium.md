@@ -9,13 +9,14 @@ image: /images/fabrikarium.jpg
 It tuns out the [HumanLab Saint-Pierre](https://www.humanlabsaintpierre.org/) was particularly busy this year. How busy ? Busy enough to hold its first "hackathon like" event, the so-called `fabrikarium`.
 Since [HumanLabs are FabLabs specially dedicated to assistive technologies](https://myhumankit.org/en/home/), their fabrikarium events consist of `prototyping workshops dedicated to tackle disability-related issues`.
 People from all over France came together in 4 teams of 10 makers, whether they be engineers, researchers, healthcare professionnals, students, retiree, etc.
-Anyone would be welcomed to contribute, as long as they have an some brain time to grant, a helping hand to give and a big warm heart.
+Anyone would be welcomed to contribute, as long as they have some brain time to grant, a helping hand to give and a big warm heart.
 
 Since its a first (and undoubtedly not the last), it beneficiated from a pretty generous media coverage.
+(for French speakers only : among all of the articles and interviews, here is a podcast interview which sums-up pretty well the spirit of the event : [Dear Valid People - Hors Série #2](https://www.radiofmplus.org/dear-valid-people-hors-serie-1-le-fabrikarium/).)
 
 
 ## Fabrikarium
-The goal here is to resolve specific major issues in every-day life for the disabled : it may be the difficulty of driving a wheelchair when it rains, eating with full autonomy at any time or any place, or communicating easily with others when needed. It is about `need-led` approaches : we start from real-life specific issues (that may be related to one specific pathology) that we actually can witness, and we are building our way up into a more global solution that can benefit to other disabilities. `Accesibility is the guiding principle` : solutions have to be wisely thougt and engineered enough to be cheap, easily reproducible and easy to use. If you want to put some buzzwords on it, we're not only talking about `open source`, but `frugal creativity`. 
+The goal here is to resolve specific major issues in every-day life for the disabled : it may be the difficulty of driving a wheelchair when it rains, eating with full autonomy at any time or any place, or communicating easily with others when needed. It is about `need-led` approaches : we start from real-life specific issues (that may be related to one specific pathology) that we actually can witness, and we are building our way up into a more global solution that can benefit to other disabilities. `Accesibility is the guiding principle` : solutions have to be wisely thougt and engineered enough to be cheap, easily reproducible and easy to use. If you want to put some buzzwords on it, just pick one of the following : `open source`, `frugal innovation`, `DIY`, `reverse engineering`, ... 
 
 It was a 3-days event. With a neat organizing team, we had the opportunity to work with the support of people from various organisations, including [ArianeGroup](https://www.ariane.group/en/), [INRIA](https://www.inria.fr/en) and [Fortil Group](https://fortil.group/). Of course, people from other HumanLabs in France also came to give a hand.
 
@@ -28,9 +29,9 @@ Mine was about wheelchair augmentation for a young freshman student. Affected by
 
 
 ## Next steps
-Of course, the prototypes we developed will evolve over time and are not limited to this event. The idea was to give either a boost or a flying start so we can rapidly know which solutions best suit the interested parties. Once targeted, we can dress a full roadmap in which we can fit more prototype testing over time, under various situations. In my project's case, it was clear that `introducing a microcontroler-based system opened the door of many exciting possibilites` : home automation, new human-computer interactions for devices control, augmented environment awareness... Knowing how driving and inspiring the project initiators (the affected student and his dad) were, I do not have a single doubt of how evolved they will make their system grow.
+Of course, the prototypes we developed will evolve over time and are not limited to this event. The idea was to give either a boost or a flying start so we can rapidly know which solutions best suit the interested parties. Once targeted, we can dress a full roadmap in which we can fit more prototype testing over time, under various situations. In my project's case, it was clear that `introducing a microcontroler-based system opened the door of many exciting possibilites` : home automation, new human-computer interactions for devices control, augmented environment awareness... Knowing how driving and inspiring the project initiators (the affected student and his dad) were, I do not have a single doubt of how advanced they will make their system grow.
 
 I was curious to witness how a project can evolve in just 3 days in such a setting. Of course, I did not expect to see our prototypes growing so fast at that advanced level. But honestly, I was more surprised of how much the event was not about ideas and prototypes growth, but about meeting great, crazy-talented, and thoughtful people. Try and stop me from attending next year !
 
 
-![Whole team](/images/fabrikarium_whole_team.jpg "The whole makers team !")
+![Whole team](/images/fabrikarium_whole_team.jpg "The whole team !")

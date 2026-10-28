@@ -97,7 +97,7 @@ params:
     title: "Koji."
     subtitle: "I build healthcare toolkits"
     content: "I'm a `Hardware Research Engineer` in the medical field. My main interests lie in cross-disciplinary fields such as 
-      `Health-sensing` and `Clinical Decision support systems`."
+      `Health-sensing` and `Systems engineering`."
     image: /images/avatar.jpg
     bottomImage:
       enable: true
@@ -127,35 +127,59 @@ params:
       I'm a French engineer. Voilà.
 
       I am interested in `human-centered initiatives` that can improve day-to-day life.
-      I believe in a technology that fits and adapts to our needs, which never replaces but always complements.
       With a strong emphasis on the healthcare field, most of my projects consist in `investigating physiological signals` with electronic devices -
       whether to help physicians make decision or patients move their bodies, but first and foremost to blink a LED.
+      
       You may find <a href="/projects">some of them here on this website</a>.
-
-      Reality is I spend most of my time drinking coffee.
     
   # Experience
   experience:
     enable: true
     title: "Work Experiences"
     items:
-      - job: "Research and Development Engineer - Hardware, DAQ"
+      - job: "Research and Development Engineer"
+        company: "DeepPulseNeuro"
+        companyUrl: "https://deeppulseneuro.com"
+        date: "August 2025 - present"
+        info:
+          enable: false
+          # content: 
+        content: |
+          DeepPulseNeuro is a startup developing EEG sensing through endovascular techniques.
+          
+          My role as a research and development engineer consists in designing embedded systems
+          that enables electrophysiology signal recording and processing.
+      
+      - job: "Electrical Engineer"
+        company: "Erba Group"
+        companyUrl: "https://products.erba.com"
+        date: "April 2024 - August 2025"
+        info:
+          enable: false
+          content: 
+        content: |
+          Worked as an electrical engineer at Erba Diagnostics France, R&D Centre of Erba Mannheim group.
+
+          - Responsible for system integration (electronics, hydraulics, firmware), analytic performance improvements and cycle processes optimisation.
+          - Defined user workflows within a cross-disciplinary team of software, mechanical and biological engineers.
+      
+      - job: "Research and Development Engineer"
         company: "Stella Surgical"
         companyUrl: "https://stellasurgical.com/en/home-page/"
-        date: "January 2022 - present"
+        date: "January 2022 - April 2024"
         info:
           enable: true
           content: Prior to this role, I worked as a systems engineer for more than a year
         content: |
-          I am currently working as a research and development engineer at Stella Surgical, with a focus on hardware innovation.
+          Promoted to research and development engineer at Stella Surgical, with a focus on hardware innovation.
 
           - Contributed to new types of health-sensing techniques for liver grafts viability assessment.
           - Led product engineering for medical embedded systems - organ tracking systems, machine perfusion devices simulation platform.
           - Led technical faisability studies on R&D early-stage projects, including medical regulatory requirements for both embedded software and hardware.
 
-          Prior to this role, I served the company as a hardware systems engineer for more than a year. I was mainly responsible of embedded systems integration and new product development.
+          Prior to this role, I served the company as a hardware systems engineer. I was mainly responsible of embedded systems integration and new product development.
 
-      - job: "Embedded Systems Engineer"
+      - job: "Research Engineer"
         company: "LIRMM"
         companyUrl: "https://www.lirmm.fr/lirmm-en/"
         date: "September 2021 - January 2022"
@@ -167,7 +191,7 @@ params:
           
             - Worked on hardware architecture definition.
             - MCAD/ECAD rapid prototyping.
-            - Signal processing, firmware programming and edge ML.
+            - Signal processing, firmware development and edge ML.
 
       - job: "Assistive Technology Designer"
         company: "HumanLab Saint-Pierre"
